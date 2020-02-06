@@ -1,6 +1,4 @@
 body{
-    margin: 0;
-    padding: 0;
     font-family: 'Roboto', sans-serif;;
 }
 /* HEADER */
@@ -16,7 +14,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    position: absolute;
+    
 }
 .user-box img{
     border-radius: 50%;
@@ -32,27 +30,7 @@ body{
 .user-box p{
     color: #fff;
 }
-.scroll-btn{
-    bottom: 30px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 2px solid #fff;
-    padding: 10px 10px 20px;
-    border-radius: 30px;
-}
-.scroll-bar span{
-    border: 2px solid #fff;
-    font-size: 10px;
-    border-radius: 30px;
-}
-.scroll-bar{
-    animation: mover 1s infinite alternate;
-}
-@keyframes mover{
-    0%{transform: translateY(0);}
-    100%{transform: translateY(10px);}
-}
+
 /* about */
 .about{
     padding-top: 100px;
@@ -63,7 +41,7 @@ body{
 }
 .nav-bar{
     top: 0;
-    position: sticky;
+    
     z-index: 2;
 }
 .navbar{
@@ -165,4 +143,42 @@ body{
 .services-box p{
     font-size: 15px;
     color: #777;
+}
+.services-box:hover{
+    background: #000;
+    color:#fff;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: 1s;
+}
+.services-box :hover p{
+    color:#fff;
+}
+
+/* CONTACTO */
+.contacto{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(img/fondo2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.contacto .col-md-4 .fab{
+    font-size: 40px;
+}
+.contacto .btn{
+    
+    
+    border-radius: 30px;
+    border: 2px solid #fff;
+    background: transparent;
+}
+.contacto .btn:focus{
+    box-shadow: none !important;
+}
+.contacto .btn:hover{
+    border: 2px solid #fff !important;
 }
